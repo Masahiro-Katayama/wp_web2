@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/************************************
+** フッター
+************************************/
+.footer {
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.copyright {
+  margin-top: 8px;
+}
+
+.footer-widgets,
+.footer-widgets-mobile {
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-left,
+.footer-center,
+.footer-right, .footer-mobile {
+  padding: 10px 16px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  width: 33.33%;
+}
+
+.footer-widgets-mobile {
+  display: none;
+}
+
+/************************************
+** フッターボトム
+************************************/
+.footer-bottom {
+  margin-top: 24px;
+  padding: 8px;
+  position: relative;
+  font-size: 14px;
+}
+
+.footer-bottom.fdt-left-and-right .footer-bottom-logo {
+  display: none;
+}
+
+.footer-bottom.fdt-left-and-right .footer-bottom-content {
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer-bottom.fdt-up-and-down .footer-bottom-logo {
+  display: none;
+}
+
+.footer-bottom.fdt-up-and-down .footer-bottom-content {
+  float: none;
+  display: block;
+  text-align: center;
+}
+
+.footer-bottom.fdt-up-and-down .footer-bottom-content .navi-footer-in > ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-bottom.fnm-text-width .menu-footer li {
+  width: auto;
+}
+
+.footer-bottom.fnm-text-width .menu-footer li a {
+  padding: 0 10px;
+}
+
+.footer-bottom-logo {
+  float: left;
+  bottom: 0;
+  position: absolute;
+}
+
+.footer-bottom-logo .logo-text {
+  padding: 0;
+}
+
+.footer-bottom-logo .site-name-text {
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+.footer-bottom-logo .logo-image {
+  padding: 0;
+  max-width: 120px;
+}
+
+.footer-bottom-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.footer-bottom-content {
+  float: right;
+  text-align: right;
+}
+/*# sourceMappingURL=footer.css.map */

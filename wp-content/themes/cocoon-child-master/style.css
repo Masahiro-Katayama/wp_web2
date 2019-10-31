@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/*!
+Theme Name: Cocoon Child
+Template:   cocoon-master
+Version:    1.0.8
+*/
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+/*1240px以下*/
+@media screen and (max-width: 1240px) {
+  /*必要ならばここにコードを書く*/
+}
+
+/*1030px以下*/
+@media screen and (max-width: 1030px) {
+  /*必要ならばここにコードを書く*/
+}
+
+/*768px以下*/
+@media screen and (max-width: 768px) {
+  /*必要ならばここにコードを書く*/
+}
+
+/*480px以下*/
+@media screen and (max-width: 480px) {
+  /*必要ならばここにコードを書く*/
+}
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+  padding: 0;
+  margin: 0;
+  font-size: medium;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  line-height: normal;
+  position: relative;
+}
+
+* {
+  text-shadow: 0.5px 0.5px 1px black !important;
+  font-weight: 200 !important;
+}
+
+.container {
+  margin-left: 250px;
+}
+
+@media (max-width: 1030px) {
+  .container {
+    margin-left: 0;
+  }
+}
+
+.home .date-tags,
+.post-date {
+  display: none;
+}
+
+#navi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  z-index: 998;
+}
+
+@media (max-width: 1030px) {
+  #navi {
+    display: none;
+  }
+}
+
+#navi-in {
+  margin: 200px 0 0 20px;
+}
+
+.menu-header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left !important;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  margin-top: 20px;
+  z-index: 999;
+}
+
+@media (max-width: 1030px) {
+  .logo {
+    display: none;
+  }
+}
+
+#header {
+  height: 60vh;
+  background-position: top -130px center;
+}
+
+@media (max-width: 1240px) {
+  #header {
+    background-position: top -80px center;
+  }
+}
+
+@media (max-width: 1030px) {
+  #header {
+    background-position: center center;
+  }
+}
+
+.mobile-header-menu-buttons {
+  background: #d2edf7;
+}
+
+.navi-menu-content {
+  background: #dbffdb;
+}
+
+.menu-drawer .menu-item {
+  padding: 20px;
+  border-bottom: 3px solid #fff;
+}
+
+#footer-in {
+  background: #d2edf7;
+}
+
+.copyright {
+  height: 50px;
+  line-height: 50px;
+}
+
+.home .entry-title {
+  display: none;
+}
+
+.entry-title {
+  margin-bottom: 30px !important;
+  font-size: 30px !important;
+  font-weight: 400 !important;
+  text-align: center;
+}
+
+input[type="submit"] {
+  width: 60%;
+  margin: 0 20%;
+  background: #dbffdb;
+  border-color: #e8ffe8;
+}
+/*# sourceMappingURL=style.css.map */

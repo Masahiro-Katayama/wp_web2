@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/************************************
+** 印刷用スタイル
+************************************/
+#container {
+  font-size: 11pt;
+}
+
+#container .header-container,
+#container .ad-area,
+#container .pager-links,
+#container .under-entry-content,
+#container .breadcrumb-category,
+#container .entry-footer,
+#container .sidebar,
+#container .footer,
+#container #admin-panel,
+#container #go-to-top,
+#container .go-to-top-button,
+#container #fb-root,
+#container .mobile-menu-buttons,
+#container .toc,
+#container .sns-share,
+#container .widget,
+#container #notice-area-wrap,
+#container #notice-area,
+#container #appeal,
+#container #recommended,
+#container #carousel,
+#container #go-to-top {
+  display: none !important;
+}
+
+#container .content-in {
+  display: block;
+}
+
+#container .main,
+#container .content,
+#container .wrap {
+  width: auto;
+  margin: 0;
+  float: none;
+  padding: 0;
+  border: none;
+  overflow-wrap: normal;
+}
+
+#container .main {
+  width: 100% !important;
+}
+
+#container h1,
+#container h2,
+#container h3,
+#container h4,
+#container h5,
+#container h6 {
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
+  margin: 10px 0;
+  color: #333;
+}
+
+#container h1 {
+  font-size: 21.5pt;
+}
+
+#container h2 {
+  font-size: 18.5pt;
+}
+
+#container h3 {
+  font-size: 16pt;
+}
+
+#container h4,
+#container h5,
+#container .article h6 {
+  font-size: 14pt;
+}
+
+#wpadminbar,
+#go-to-top,
+#admin-panel {
+  display: none !important;
+}
+
+body {
+  background-image: none !important;
+  background-break: transparent;
+}
+/*# sourceMappingURL=print.css.map */

@@ -1,0 +1,13 @@
+#wpforo-wrap .anchor-icon,
+.gallery .anchor-icon,
+.amazonjs_item .anchor-icon,
+.kaerebalink-box .anchor-icon,
+.booklink-box .anchor-icon,
+.tomarebalink-box .anchor-icon,
+.wpf-sbtn-wrap .anchor-icon,
+.btn .anchor-icon,
+.btn-wrap a .anchor-icon,
+.no-icon .anchor-icon {
+  display: none !important;
+}
+/*# sourceMappingURL=links.css.map */

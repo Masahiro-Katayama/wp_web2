@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: Cocoon Child
+Template:   cocoon-master
+Version:    1.0.8
+*/
+
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+/*1240px以下*/
+@media screen and (max-width: 1240px) {
+  /*必要ならばここにコードを書く*/
+}
+
+/*1030px以下*/
+@media screen and (max-width: 1030px) {
+  /*必要ならばここにコードを書く*/
+}
+
+/*768px以下*/
+@media screen and (max-width: 768px) {
+  /*必要ならばここにコードを書く*/
+}
+
+/*480px以下*/
+@media screen and (max-width: 480px) {
+  /*必要ならばここにコードを書く*/
+}
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+
+// -------------------------
+// ----- メディアクエリ -----
+// -------------------------
+$xl: 1240px;
+$lg: 1030px;
+$md: 768px;
+$sm: 480px;
+
+@mixin mq($break-point) {
+  @media (max-width: $break-point) {
+    @content;
+  }
+}
+
+// -------------------------
+// ----- カラー指定 -----
+// -------------------------
+$main-color: #fff;
+$sub-color: #dbffdb;
+$accent-color: #d2edf7;
+
+// -------------------------
+// ----- 見出し初期化 -----
+// -------------------------
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+  padding: 0;
+  margin: 0;
+  font-size: medium;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  line-height: normal;
+  position: relative;
+}
+.article h1 {
+}
+.article h2 {
+}
+.article h3 {
+}
+.article h4 {
+}
+.article h5 {
+}
+.article h6 {
+}
+
+// -------------------------
+// ----- 全体 -----
+// -------------------------
+* {
+  text-shadow: 0.5px 0.5px 1px black !important;
+  font-weight: 200 !important;
+}
+
+.container {
+  margin-left: 250px;
+  @include mq($lg) {
+    margin-left: 0;
+  }
+}
+
+// トップページと、投稿ページの投稿日非表示
+.home .date-tags,
+.post-date {
+  display: none;
+}
+
+// -------------------------
+// ----- ヘッダーナビ -----
+// -------------------------
+#navi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  z-index: 998;
+  @include mq($lg) {
+    display: none;
+  }
+}
+
+#navi-in {
+  margin: 200px 0 0 20px;
+}
+
+.menu-header {
+  flex-direction: column;
+  text-align: left !important;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  margin-top: 20px;
+  z-index: 999;
+  @include mq($lg) {
+    display: none;
+  }
+}
+
+// -------------------------
+// ----- ヘッダーアイキャッチ -----
+// -------------------------
+#header {
+  height: 60vh;
+  background-position: top -130px center;
+  @include mq($xl) {
+    background-position: top -80px center;
+  }
+  @include mq($lg) {
+    background-position: center center;
+  }
+}
+
+// -------------------------
+// ----- モバイルヘッダーナビ -----
+// -------------------------
+.mobile-header-menu-buttons {
+  background: $accent-color;
+}
+
+.navi-menu-content {
+  background: $sub-color;
+}
+
+.menu-drawer .menu-item {
+  padding: 20px;
+  border-bottom: 3px solid #fff;
+}
+
+// -------------------------
+// ----- フッター -----
+// -------------------------
+#footer-in {
+  background: $accent-color;
+}
+
+.copyright {
+  height: 50px;
+  line-height: 50px;
+}
+
+// -------------------------
+// ----- サブページ -----
+// -------------------------
+
+// トップページのタイトル非表示
+.home .entry-title {
+  display: none;
+}
+
+// タイトル中央寄せ
+.entry-title {
+  margin-bottom: 30px !important;
+  font-size: 30px !important;
+  font-weight: 400 !important;
+  text-align: center;
+}
+
+// -------------------------
+// ----- 問い合わせフォーム -----
+// -------------------------
+input[type="submit"] {
+  width: 60%;
+  margin: 0 20%;
+  background: $sub-color;
+  border-color: #e8ffe8;
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,cAAc,CAAC,iBAAiB,CAAC,oBAAoB,CAAC;EACrD,OAAO,EAAE,SAAS;CAClB",
+    "sources": [
+        "gutenberg.scss"
+    ],
+    "names": [],
+    "file": "gutenberg.css"
+}

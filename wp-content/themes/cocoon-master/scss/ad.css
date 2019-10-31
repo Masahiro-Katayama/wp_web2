@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/************************************
+** 広告
+************************************/
+.ad-area {
+  text-align: center;
+  margin-bottom: 1.8em;
+  overflow: hidden;
+}
+
+.entry-content .ad-area {
+  margin: 1em 0;
+}
+
+.ad-label-invisible .ad-label {
+  display: none;
+}
+
+.ad-content-top {
+  margin-top: 1em;
+}
+
+.ad-responsive ins {
+  width: 100%;
+}
+
+.ad-single-rectangle .ad-responsive,
+.ad-dabble-rectangle .ad-responsive {
+  max-width: 336px;
+  margin: auto;
+}
+
+/************************************
+** ダブルレクタングル
+************************************/
+.ad-dabble-rectangle .ad-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ad-dabble-rectangle .ad-responsive {
+  width: 336px;
+}
+
+/************************************
+** 記事内広告
+************************************/
+@media screen and (max-width: 692px) {
+  .ad-dabble-rectangle .ad-responsive {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 626px) {
+  .ad-dabble-rectangle .ad-responsive {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  .ad-dabble-rectangle .ad-wrap {
+    display: block;
+  }
+  .ad-dabble-rectangle .ad-responsive {
+    width: auto;
+    max-width: none;
+    margin: auto;
+  }
+  .ad-dabble-rectangle .ad-additional-double {
+    display: none;
+  }
+}
+
+/************************************
+** サイドバーのダブルレクタングル
+************************************/
+.sidebar .ad-additional-double {
+  display: none;
+}
+
+/************************************
+** サイドバーのスカイスクレイパー
+************************************/
+.sidebar .ad-additional-vertical {
+  display: none;
+}
+
+@media screen and (max-width: 834px) {
+  .sidebar .ad-vertical .ad-usual {
+    display: none;
+  }
+  .sidebar .ad-vertical .ad-additional-vertical {
+    display: block;
+  }
+}
+/*# sourceMappingURL=ad.css.map */
